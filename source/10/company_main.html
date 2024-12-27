@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        li{
+            list-style-type: none;
+        }
+        #header{
+            background-color: #8e8e8e;
+            width:800px;
+        }
+        #logo{
+            position:relative;
+            top:30px;
+            left:30px;
+        }
+        #top_menu{
+           margin-right:50px;
+            float:right;
+        }
+        #top_menu li{
+            display:inline-block;
+            margin-left:10px;   
+        }
+        #main_menu{
+            position:relative;
+            width:775px;
+            top:10px;
+            font-size:18px;
+            color:#ffffff;
+            background-color: #8e8e8e;
+            margin-top: 15px;
+            padding:12px;
+            text-align:right;
+        }
+        #main_menu li{
+            padding:0 20px 0 20px;
+            display:inline;
+        }
+        #content img{
+            width: 800px;
+            height: 300px;;
+        }
+        #content ul {
+            display: flex;
+            margin-left:110px;
+        }
+        #content ul img{
+            width: 281px;
+            height: 81px;
+            margin-right: 20px;
+        }
+        #footer img{
+            width: 800px;
+            height: 81px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="logo"><img src ="img/logo.png"></div>
+        <div id="top_menu">
+            HOME | NOTICE | LOGIN | JOIN</div>
+        <ul id="main_menu">
+            <li>COMPANY</li>
+            <li>PRODUCT</li>
+            <li>CUSTOMER</li>
+            <li>SERVICE</li>
+            <li>RECRUIT</li>
+        </ul>
+    </div>
+    <div id="content">
+        <img src="img/main.png">
+        <ul>
+            <li><img src ="img/banner1.png"></li>
+            <li><img src ="img/banner2.png"></li>
+        </ul>
+    </div>
+    <div id="footer">
+        <img src="img/address.png">
+    </div>
+</body>
+</html>
