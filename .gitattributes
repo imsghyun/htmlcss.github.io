@@ -1,3 +1,0 @@
-source/10/img/photo-movie.mp4 filter=lfs diff=lfs merge=lfs -text
-source/10/img/photo-movie4.mp4 filter=lfs diff=lfs merge=lfs -text
-source/10/img/photo-movie3.mp4 filter=lfs diff=lfs merge=lfs -text
