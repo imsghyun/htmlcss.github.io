@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: "sans-serif";
+            font-size: 12px;
+            color: var(--grey)
+
+        }
+
+        :root{
+            --light-blue: #4db1ec;
+            --blue: #1665cc;
+            --purple: #b473bf;
+            --pink: #ffb2c1;
+            --orange: #ff9f67;
+            --yellow: #ffd673;
+            --light-green: #a2e29b;
+            --green: #00a2af;
+            --grey: #333;
+            --white: #fff;
+        }
+        html{
+            font-size: 100%;
+            scroll-behavior: smooth;
+        }
+        header{
+            background: var(--light-blue) url(./img/dogimg.jpg) no-repeat center / cover;
+            background-color: var(--light-blue);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: screen;
+            animation: bg-color 24s infinite;
+        }
+
+        @keyframes bg-color {
+            0% {background-color: var(--light-blue);}
+            12.5%{background-color: var(--blue);}
+            25%{background-color: var(--purple);}
+            37.5%{background-color: var(--pink);}
+            50%{background-color: var(--orange);}
+            62.5%{background-color: var(--yellow);}
+            75%{background-color: var(--light-green);}
+            87.5%{background-color: var(--green);}
+            100%{background-color: var(--light-blue);}
+        }
+
+        ul{
+            list-style-type:none;
+        }
+
+        .clear{
+            clear: both;
+        }
+
+
+        #page{
+            width: 980px;
+            margin: auto;
+        }
+
+        main{
+            margin-top: 10px;
+        }
+
+        #banner{
+            height: 110px;
+            background-color:  #1f7efb;
+        }
+
+        #banner li{
+            display: inline;
+            margin-left: 28px;
+        }
+
+        #banner ul{
+            margin-top: 5px;
+            padding-top: 7px;
+        }
+
+        header #logo{
+            float: left;
+            margin: 35px 0 0 20px;
+        }
+
+        header #moto{
+            float: left;
+            margin: 45px 0 0 20px;
+        }
+
+        header #top_menu{
+            float: right;
+            margin: 40px 10px 0 0;
+        }
+
+        header #top_menu li{
+            display: inline;
+        }
+
+        .line{
+            margin-top: 25px;
+            border-top: solid 1px #cccccc;
+        }
+
+        header nav ul{
+            margin-top: 25px;
+
+        }
+
+        header nav li{
+            display: inline;
+        }
+
+        header nav li.item{
+            margin-left: 40px;
+        }
+        aside {
+            width:180px;
+            float:left;
+            margin-top:30px;	
+        }
+
+        aside h3 {
+            margin:5px;
+            border-bottom:solid 3px #1f7efb;
+        }
+
+        aside .col1 {
+            float:left;
+            font-size:15px;
+        }
+
+        aside .col2 {
+            float:right;
+            font-size:6px;
+        }
+
+        aside ul {
+            margin:15px 5px 5px 5px;
+        }
+
+        aside li {
+            padding:12px;
+            border-bottom:solid 1px #cccccc;
+        }
+
+        aside li.selected {
+            border:0;
+            background-color: #1f7efb;
+            color:#ffffff;
+        }
+
+        aside li.end {
+            border-bottom:solid 3px #cccccc;
+        }
+
+        aside #customer {
+            margin:30px 0 0 8px;
+        }
+
+        section {
+            width:772px;
+            height:510px;
+            float:left;
+            margin-left:26px;
+            margin-top:30px;		
+        }
+
+        section #sub_img {
+            margin-top:5px;
+        }
+
+        section .product {
+            width:761px;
+            height:70px;
+            margin-top:20px;
+            padding:15px 5px 5px 5px;
+            border-top:solid 2px #1f7efb;
+        }
+
+        section .product h3 {
+            float:left;
+        }
+
+        section .product .btns {
+            float:left;
+            margin-left:20px;
+            margin-bottom: 0;
+        }
+
+        section .product ul {
+            margin-top:10px;
+        }
+
+        section .product li {
+            margin:3px;
+        }
+        footer{
+            padding: 20px 0 0 15px;
+            border-top: solid 3px  #1f7efb;
+            color: #666666;
+        }
+        footer #address{
+            float: left;
+        }
+        footer #link{
+            float: right;
+        }
+
+        footer #footer_menu li{
+            margin-top: 5px;
+        }
+        footer #company_info{
+            margin-top: 20px;
+        }
+        footer #company_info li{
+            margin-top: 2px;
+        }
+        footer #copyright{
+            margin-top: 10px;
+            font-size: 11px;
+            color: #888888;
+        }
+        footer #link h3{
+            font-size: 16px;
+            color: #1f7efb;
+        }
+        footer #link select{
+            margin: 5px 0 0 50px;
+            width: 100px;
+            height: 18px;
+            font-size: 11px;
+        }
+        footer #icons{
+            margin-top: 10px;
+            text-align: right;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <a href="11-1.html"><img id="logo" src="img/로고.png"></a>
+            <img id="moto" src="img/세부.png">
+            <ul id="top_menu">
+                <li>로그인 |</li>
+                <li>회원가입 |</li>
+                <li>사이트맵 |</li>
+                <li>회사소개</li>
+            </ul>
+            <div class="clear"></div>
+            <div class="line"></div>
+
+            <nav>
+                <ul>
+                    <li><img src="img/소개.png"></li>
+                    <li class="item"><img src="img/구매.png"></li>
+                    <li class="item"><img src="img/마이.png"></li>
+                    <li class="item"><img src="img/고객.png"></li>
+                    <li class="item"><img src="img/가이드.png"></li>
+                </ul>
+            </nav>
+        </header>
+      
+        
+        <main>	
+            <aside>
+              <h3><img src="img/구매하기.png"></h3>
+                <ul>
+                  <li class="selected"><div class="col1">노즈워크</div>
+                    <div class="col2">▶</div>
+                    <div class="clear"></div>
+                  </li>
+                  <li><div class="col1">공</div>
+                    <div class="col2">▶</div>
+                    <div class="clear"></div>
+                  </li>
+                  <li><div class="col1">소리나는장난감</div>
+                    <div class="col2">▶</div>
+                    <div class="clear"></div>
+                  </li>
+                  <li><div class="col1">비닐장난감</div>
+                    <div class="col2">▶</div>
+                    <div class="clear"></div>
+                  </li>
+                  <li class="end"><div class="col1">간식</div>
+                    <div class="col2">▶</div>
+                    <div class="clear"></div>
+                  </li>
+                </ul>
+              <div id="customer">
+                <img src="img/번호2.png" width="160px">
+              </div>
+            </aside>
+            <section>
+              <div><img src="img/노즈워크글.png"></div>
+              <div id="sub_img"><img src="img/노즈워크.png"></div>
+              <div class="product">
+                <h3>노즈워크 </h3>
+                <div class="btns">
+                  <img src="img/인기상품.png" width=45px>  
+                  <img src="img/추천상품.png" width=45px> 
+                </div>
+                <div class="clear"></div>
+                <ul>
+                  <li>○ 튼튼한 내구성</li>
+                  <li>○ 다양한 색상</li>
+                  <li>※ 구매일로부터 2년간 무상수리 서비스를 제공</li>
+                </ul>
+              </div>
+              <div class="product">
+                <h3>공 </h3>
+                <div class="btns">
+                    <img src="img/인기상품.png" width=45px>  
+                    <img src="img/추천상품.png" width=45px> 
+                </div>
+                <div class="clear"></div>
+                <ul>
+                  <li>○ 다양한 사이즈</li>
+                  <li>○ 맞춤 사이즈</li>
+                  <li>※ 구매일로부터 2년간 무상수리 서비스를 제공</li>
+                </ul>
+              </div>
+            </section>
+            <div class="clear"></div>
+          </main>
+          
+
+
+          <footer>
+            <article id="address">
+                <ul id="footer_menu">
+                    <li>개인정보 취급방침 | 이용 안내 | 이메일 무단수집 거부</li>
+                    
+                </ul>
+                <ul id="company_info">
+                    <li>(주)PETTOYS.COM</li>
+                    <li>대표 : 임승현</li>
+                    <li>주소 : 서울시 서초구 가나다동 123</li>
+                    <li>전화 : (02)123-1234, FAX : (02)123-4567</li>
+                    <li id="copyright">Copyright by PETTOYS.COM Company All Rights Reserved.</li>
+                </ul>
+            </article>
+            <article id="link">
+                <h3>고객센터 1234-1234</h3>
+                <select>
+                    <option>네이버</option>
+                    <option>다음</option>
+                    <option>구글</option>
+                </select>
+            <div id="icons">
+                <img src="img/네이버.png" width="30px">
+                <img src="img/다음.png" width="30px">
+                <img src="img/구글.png" width="30px">
+            </div>
+            </article>
+        </footer>
+        </div>
+
+</body>
+</html>
