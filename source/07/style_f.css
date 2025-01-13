@@ -1,0 +1,345 @@
+@charset 'UTF-8';
+
+/*GENERAL STYLING
+==================================================================*/
+
+html{
+    font-size:100%;
+}
+body{
+    color:#555;
+    font-family: sans-serif;
+}
+
+/*COMMON
+==================================================================*/
+p,
+td{
+    line-height: 1.7;
+}
+
+/* Layout*/
+.wrapper{
+    max-width:  1200px;
+    width:100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+main{
+    max-width: 900px;
+    width: 94%;
+    margin: 6.25rem auto;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+}
+.text-center{
+    text-align: center;
+}
+h1 img{
+    margin-top: 100px;
+}
+/* Button*/
+.btn{
+    font-family: 'Noto Serif KR', serif;
+    display: inline-block;
+    padding: 1.25em 3.25rem;
+    font-size: 1.375rem;
+    text-align:center;
+    width:100%;
+}
+.btn-primary{
+    color: #fff;
+    background:#2d3374;
+}
+.btn-primary:hover{
+    background-color: #3a7edf;
+}
+.btn-secondary{
+    color:#555;
+    background: #d0bea2;
+}
+.btn-secondary:hover{
+    background:#d9cebe;
+}
+
+/*heading*/
+.title{
+    font-family: 'Noto Serif KR',serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.title::after{
+    content:'';
+    display: block;
+    height: 5px;
+    width: 10rem;
+    background: #d0bea2;
+    margin: 2rem 0 2.5rem;
+}
+.title-center{
+    text-align:center;
+}
+.title-center::after{
+    margin: 2.5rem auto;
+}
+
+/* table */
+table{
+    margin: 3.5rem 0;
+    width:100%;
+}
+th,td{
+    display:block;
+}
+th{
+    font-weight: normal;
+    
+    vertical-align: middle;
+    padding:1rem;
+}
+td{
+    padding: .75rem 1rem 1.75rem;
+}
+/*COMMON
+==================================================================*/
+header.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.main-nav{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+.main-nav li{
+    text-align:right;
+    font-size: .75rem;
+}
+.logo{
+    width:7.5rem;
+}
+.main-nav a{
+    display: block;
+    padding: .5rem;
+    width: 4rem;
+}
+.main-nav a::before{
+    display: block;
+    margin-bottom:.25rem;
+
+      /*Font Awesome */
+      font-family:'Font Awesome 5 Pro';
+      font-weight: 900;
+      color: #555;
+      font-size: 1.25rem;
+}
+
+  
+
+    /*FORM.html
+==================================================================*/
+.page-form{
+    background-image: url('../images/bg-form.jpg'),
+    linear-gradient
+    (180deg, transparent 0%, transparent 50%, #F8F6F2 50%, #F8F6F2 100%);
+    background-position: right 106px, 0 0;
+    background-size: 70vw auto, contain;
+    background-repeat: no-repeat;
+}
+.text-small{
+    font-size:.875rem;
+}
+
+/*Form*/
+input[type='text'],
+input[type='email'],
+input[type='url'],
+select,
+textarea{
+    border:1px solid #bbb;
+    background:#fff;
+    padding:.5rem;
+    width:100%;
+}
+input[type='text']::placeholder,
+input[type='email']::placeholder,
+input[type='url']::placeholder,
+textarea::placeholder{
+    color: #bbb;
+}
+textarea{
+    height: 10rem;
+}
+label{
+    display: block;
+    margin-bottom: 1rem;
+}
+.select-box{
+    position: relative;
+}
+.select-box::after{
+    display: inline-block;
+    position:absolute;
+    top:.625rem;
+    right:1rem;
+    /* Font Awesome */
+    font-family: 'Font Awesome 5 Pro';
+    font-weight : 900;
+    content: '♥️';
+    color: #bbb;
+}
+
+/* 기본 체크박스 표시하지 않음 */
+input[type='checkbox']{
+    opacity: 0;
+    -webkit-apperance:none;
+    appearance: none;
+    position: absolute;
+}
+
+/* 체크박스 용 사각형 만들기 */
+input[type = 'checkbox'] + span::before{
+    display: inline-block;
+    content:'';
+    width:1.5rem;
+    height: 1.5rem;
+    border: 1px solid #bbb;
+    background: #fff;
+    margin: -.125rem .5rem 0 0;
+    vertical-align: middle;
+    
+        /* Font Awesome */
+        font-family: 'Font Awesome 5 Pro';
+        font-weight : 900;
+        padding: 0 2px;
+        line-height: 1.5;
+        
+}
+  /* 체크하면 체크 아이콘을 표시 */
+  input[type='checkbox']:checked + span::before {
+    content:'♥️';
+  }
+
+       /*FOOTER
+==================================================================*/
+footer{
+    background: #2d3374;
+    color:rgba(255,255,255,8);
+}
+
+
+/*
+DESKTOP SIZE
+=========================================================================*/
+@media (min-width: 600px){
+    /* Common */
+    main{
+        padding: 5rem;
+    }
+    .btn{
+        width:auto;
+    }
+    .title{
+        font-size: 1.875rem;
+    }
+
+    /* Table */
+    tr:nth-child(odd){
+        background: #f8f6f2;
+    }
+    tr:nth-child(even)th{
+        background: #fff;
+    }
+    th,
+    td{
+        padding: 1.25em;
+        display: table-cell;
+    }
+    th{
+        width: 24%;
+        vertical-align: middle;
+    }
+    td{
+        width:76%
+    }
+
+    /* Header */
+    header.wrapper{
+        padding: 2rem 1rem;
+    }
+    .logo{
+        width: 12.5rem;
+    }
+    .main-nav{
+        justify-content: flex-end;
+        list-style: none;
+       text-decoration: none;
+        color:#F8F6F2
+    }
+    .main-nav-li{
+        list-style:none;/**/
+        margin-left: 2rem;
+        font-family: 'Noto Serif KR',serif;
+        text-decoration: none; 
+        font-size: 1.25rem;
+    }
+    .main-nav a{
+        width: auto;
+        text-decoration: none;
+        margin-right: 10px;
+       
+    }
+    .main-nav a:hover,
+    .main-nav.current{
+        text-decoration: none;/**/
+        border-bottom: 2px solid #ffffff;
+        padding-bottom:.5rem;
+    }
+    .main-nav a::before{
+        content:'';
+    }
+
+    /* Form */
+    label{
+        display: inline-block;
+        margin: 0 1.5rem 0 0;
+    }
+    .select-box{
+        width: 40%
+    }
+
+    /* Footer */
+   /*FOOTER*/
+footer{
+    background: #2d3374;
+    color: #fff; /* Set text color to white */
+    padding: 2rem 0; /* Add padding top and bottom */
+}
+
+/* Footer Links */
+footer a {
+    color: #fff; /* Set link text color to white */
+    text-decoration: none; /* Remove underline */
+}
+    .footer-nav{
+        display: flex;
+        justify-content:center;
+        list-style: none;
+        text-decoration: none;
+        color:white;
+    }
+    .footer-nav li{
+        margin: 0.75rem;
+        text-decoration: none;
+    }
+    .footer a{
+        color:#fff
+        
+    }
+    .footer-nav a:hover{
+        color: #fff;
+    }
+}
